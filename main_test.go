@@ -7,7 +7,7 @@ import (
 )
 
 func TestMySQLDatabaseConnection(t *testing.T) {
-	db, err := sql.Open("mysql", "user:password@/dbname")
+	db, err := sql.Open("mysql", "root:root@/dbname")
 // 	if err != nil {
 // 		t.Fatal("A connection could not be established.")
 // 	}
