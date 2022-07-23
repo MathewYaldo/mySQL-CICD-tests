@@ -13,6 +13,6 @@ func TestMySQLDatabaseConnection(t *testing.T) {
 // 	}
 	if err = db.Ping(); err != nil {
 	    t.Fatal("A connection could not be established.")
-            d.Close()
+            db.Close()
         }
 }
